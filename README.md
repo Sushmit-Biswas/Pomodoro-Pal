@@ -1,89 +1,130 @@
-# Pomodoro React App
+# Sleek Pomodoro Timer
 
-⏲ React Pomodoro timer + Frontend Mentor's visual design.
+A minimalist, dark-themed Pomodoro timer built with React.
 
+## Features
 
-If you're just interested in the timer, you can [run it here](https://pomodoro.astroud.vercel.app).
+- Sleek, smooth animated dark background design
+- Centric timer with circular progress bar
+- Three timer modes: Work, Short Break, and Long Break
+- Customizable settings:
+  - Adjustable time durations for all modes
+  - Three color themes: Orange, Cyan, and Purple
+  - Three font options
+- Sound notifications for timer events
 
-I created this [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) app with React as a learning and documentation exercise while taking the [Full Stack Open course](https://fullstackopen.com/en/) with the [CodeBookClub](https://madisonkanna.com/codebookclub/).
+## Technologies Used
 
-The problem–or rather challenge–with tutorials and courses is that while you end up with a finished project, you don't necessarily understand how to build another project without directions.
+- React for the UI components and state management
+- react-circular-progressbar for the circular progress indicator
+- Web Audio API for sound effects
+- CSS animations for smooth transitions
 
-The solution is meticulous note taking and supplementing the course with self-directed projects to further internalize the material. As a bonus, a well documented side project serves as a reference for yourself and others.
+## How to Use
 
-<img src="demo.gif" width="476" height="640" alt="animated gif demoing pomodoro timer" />
+1. Choose your timer mode (Work, Short Break, Long Break)
+2. Click the Start button to begin the timer
+3. When the timer ends, it will automatically switch to the next mode
+4. Access Settings to customize:
+   - Timer durations
+   - Color theme
+   - Font style
 
+## Getting Started
 
-## Table of Contents
+### Installation
 
-- [Background](#background)
-- [Install](#install)
-- [Contributing](#contributing)
-- [License](#license)
-- [Author](#author)
-
-
-
-## Background
-The purpose of this project is two-fold: to create an attractive, functional [pomodoro timer](https://en.wikipedia.org/wiki/Pomodoro_Technique) and as an opportunity to implement a React app without guidance. The project started as a Figma design provided by [Frontend Mentor](https://www.frontendmentor.io) ([my solution](https://www.frontendmentor.io/solutions/pomodoro-react-app-2gFE6LaFn)).
-
-I initially implemented the design in html/css and vanilla JavaScript, but quickly saw the value in using React to track State and render components. That's why this project uses a single css file instead of [inline styles or CSS-in-JS](https://reactjs.org/docs/faq-styling.html).
-
-
-### Tech stack
-Pomodoro React App uses:
-* [`React`](https://reactjs.org) for state and rendering
-* [`react-circular-progressbar`](https://github.com/kevinsqi/react-circular-progressbar) for the circular, SVG progress bar component
-* [`useSound`](https://github.com/joshwcomeau/use-sound) React Hook for playing sound effects
-
-
-### What can be improved
-There are likely many better ways of accomplishing this project, but this project already had me jumping ahead in the [Full Stack Open course](https://fullstackopen.com/en/) (FSO) so I needed to draw the line somewhere. 
-
-FSO covers testing React apps in part 5 and state management with Redux in part 6. I intend to refactor my code after these chapters.
-
-
-## Install
-
-This module depends upon basic knowledge of [terminal](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line), [Node](https://nodejs.org/en/), [React](https://reactjs.org), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML), and [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS).
-
-[The app is live on Vercel]((https://pomodoro.astroud.vercel.app)) but if you'd like to run it locally, first clone the repo:
-
-```
-git clone https://github.com/astroud/pomodoro-react-app.git
-```
-<br>
-
-Then install dependencies:
-
-```
-cd pomodoro-react-app
+```bash
 npm install
 ```
-<br>
 
-Start the app in development mode and open your browser to [http://localhost:3000/](http://localhost:3000/) to view the app. The page will reload if you make edits. You will also see any lint errors in the console.
+### Running the App
 
-```
+```bash
 npm start
 ```
-<br>
 
-The test runner can run in interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+### Building for Production
+
+```bash
+npm run build
 ```
-npm test
-```
 
-## Contributing
-PRs accepted.
+Builds the app for production to the `build` folder.
 
-### Known Issues
-Does not track your start time or save your preferences, so timer stops if your computer sleeps and the settings need to be reentered when the page is refreshed.
+## About the Pomodoro Technique
 
-## License
-[MIT © Aaron Stroud.](./LICENSE)
+The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for tomato, after the tomato-shaped kitchen timer that Cirillo used as a university student.
 
+## Original Create React App Documentation
 
-## Author
-👋 I'm a frontend web developer + Tech & Communications Specialist. #opentowork Older work: @Cotni and @incsuccess
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
