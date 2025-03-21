@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.0",
-    "react": "^17.0.1",
-    "react-circular-progressbar": "^2.0.3",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "use-sound": "^2.0.1",
-    "web-vitals": "^0.2.4"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "react": "^18.2.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "use-sound": "^4.0.1",
+    "web-vitals": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=16.0.0 <=22.x"
   }
 }

@@ -12,3 +12,9 @@ it('App renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
 });
+
+test('renders pomodoro heading', () => {
+  render(<App />);
+  const headingElement = screen.getByText(/pomodoro/i);
+  expect(headingElement).toBeInTheDocument();
+});
