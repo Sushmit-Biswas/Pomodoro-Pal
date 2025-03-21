@@ -22,7 +22,7 @@ const TimerDisplay = ({ timerMode,
                                       volume: volume,
                                     })
   const [pause] = useSound(pauseSfx, {
-                                      interupt: true,
+                                      interrupt: true,
                                       volume: volume,
                                     })
 

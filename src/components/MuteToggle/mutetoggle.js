@@ -1,6 +1,6 @@
 import React from 'react'
 
-const muteToggle = ( { volume, setVolume }) => {
+const MuteToggle = ( { volume, setVolume }) => {
   const handleClick = (event) => {
     if (volume === 0) {
       setVolume(1)
@@ -33,4 +33,4 @@ const muteToggle = ( { volume, setVolume }) => {
   }
 }
 
-export default muteToggle
+export default MuteToggle

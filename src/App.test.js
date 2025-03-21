@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client';
 import App from './App';
 
 // test('renders learn react link', () => {
@@ -10,7 +10,9 @@ import App from './App';
 
 it('App renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  const root = createRoot(div);
+  root.render(<App />);
+  root.unmount();
 });
 
 test('renders pomodoro heading', () => {
